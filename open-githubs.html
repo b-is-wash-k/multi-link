@@ -20,13 +20,15 @@
   <title>Open GitHub Profiles</title>
 </head>
 <body>
-  <h3>Click below to open both GitHub profiles:</h3>
+  <h3>Click the button to open both GitHub profiles:</h3>
   <button onclick="openLinks()">Open Profiles</button>
 
   <script>
     function openLinks() {
       window.open("https://github.com/bee-shuuuas/", "_blank");
-      window.open("https://github.com/b-is-wash-k", "_blank");
+      setTimeout(function() {
+        window.open("https://github.com/b-is-wash-k", "_blank");
+      }, 300); // Delay 300ms
     }
   </script>
 </body>
